@@ -18,7 +18,7 @@
   background-clip: padding-box;
 }
 .r-ss-remove-button > span:before {
-  position: aboslute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -125,7 +125,7 @@
   background-clip: padding-box;
 }
 .r-ss-trigger .r-ss-selection-clear > span:before {
-  position: aboslute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -203,7 +203,7 @@
   background-clip: padding-box;
 }
 .r-ss-search-inner .r-ss-search-clear > span:before {
-  position: aboslute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -408,7 +408,7 @@
   background-clip: padding-box;
 }
 .r-ss-tag .r-ss-tag-remove > span:before {
-  position: aboslute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;

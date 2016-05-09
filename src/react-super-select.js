@@ -369,6 +369,12 @@ var ReactSuperSelect = React.createClass({
     event.preventDefault();
   },
 
+  _broadcastChange: function() {
+    let outputValue = this._isMultiSelect() ? this.state.value : _.head(this.state.value);
+    outputValue = _.isEmpty(outputValue) ? undefined : outputValue;
+    this.props.onChange(outputValue);
+  },
+  
   // calculate the initial value for the control from props, componentWillReceiveProps will call passing nextProps
   _buildInitialValue: function(props) {
     props = props || this.props;
@@ -395,12 +401,15 @@ var ReactSuperSelect = React.createClass({
 
   // clear the selected options
   // for **clearable** controls
-  _clearSelection: function(event) {
-    if ((event.which === this.keymap.enter) || (event.which === this.keymap.space) || (event.type === "click")) {
+  _clearSelection: function _clearSelection(event) {
+    if (event.which === this.keymap.enter || event.which === this.keymap.space || event.type === "click") {
       event.stopPropagation();
       this.setState({
         value: []
-      }, this._focusTrigger);
+      }, function() {
+        this._focusTrigger();
+        this._broadcastChange();
+        });
     }
   },
 
