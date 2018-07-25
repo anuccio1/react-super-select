@@ -1,4 +1,6 @@
 # react-super-select
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fanuccio1%2Freact-super-select.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fanuccio1%2Freact-super-select?ref=badge_shield)
+
 
 A flexible replacement for the html select control built with React and Lodash
 
@@ -87,3 +89,6 @@ MIT License
 
 Copyright (c) 2015 Scotland Stephenson.
 
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fanuccio1%2Freact-super-select.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fanuccio1%2Freact-super-select?ref=badge_large)
